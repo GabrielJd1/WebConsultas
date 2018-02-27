@@ -7,11 +7,12 @@ using System.Web;
 
 namespace WebConsultas.Models
 {
+    [Table("Funcionario")]
     public class Funcionario
     {
         public Funcionario()
         {
-            telefones = new List<Telefone>();
+            telefones = new List<TelefonesFunc>();
         }
         [Key]
         public int idFuncionario { get; set; }
@@ -21,14 +22,14 @@ namespace WebConsultas.Models
         public DateTime dataDemi { get; set; }
 
         [ForeignKey("Cargo")]
-        public int idCargo { get; set; }
+        public int Cargo_idCargo { get; set; }
         [ForeignKey("Endereco")]
-        public int idEndereco { get; set; }
+        public int Endereco_IdEndereco { get; set; }
 
         public virtual Cargo cargo { get; set; }
         public virtual Endereco endereco { get; set; }
 
-        public virtual IEnumerable<Telefone> telefones { get; set; }
+        public virtual IEnumerable<TelefonesFunc> telefones { get; set; }
 
 
     }

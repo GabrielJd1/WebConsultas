@@ -158,7 +158,7 @@
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\Funcionario.cs" />
-    <Compile Include="Models\Telefone.cs" />
+    <Compile Include="Models\TelefonesFunc.cs" />
     <Compile Include="Models\WebConsultasContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

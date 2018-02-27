@@ -7,6 +7,7 @@ using System.Web;
 
 namespace WebConsultas.Models
 {
+    [Table("Endereco")]
     public class Endereco
     {
         [Key]

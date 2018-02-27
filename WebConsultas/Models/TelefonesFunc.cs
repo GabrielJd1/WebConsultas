@@ -7,7 +7,8 @@ using System.Web;
 
 namespace WebConsultas.Models
 {
-    public class Telefone
+    [Table("TelefonesFunc")]
+    public class TelefonesFunc
     {
         [Key]
         public int idTelefone { get; set; }

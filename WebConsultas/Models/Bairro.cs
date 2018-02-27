@@ -7,6 +7,7 @@ using System.Web;
 
 namespace WebConsultas.Models
 {
+    [Table("Bairro")]
     public class Bairro
     {
 
