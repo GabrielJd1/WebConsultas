@@ -10,7 +10,7 @@ namespace WebConsultas.Models
     [Table("Bairro")]
     public class Bairro
     {
-
+        //editei
         [Key]
         public int idBairro { get; set; }
         public string descricao { get; set; }
