@@ -24,10 +24,10 @@ namespace WebConsultas.Models
         [ForeignKey("Cargo")]
         public int Cargo_idCargo { get; set; }
         [ForeignKey("Endereco")]
-        public int Endereco_IdEndereco { get; set; }
+        public int Endereco_idEndereco { get; set; }
 
-        public virtual Cargo cargo { get; set; }
-        public virtual Endereco endereco { get; set; }
+        public virtual Cargo Cargo { get; set; }
+        public virtual Endereco Endereco { get; set; }
 
         public virtual IEnumerable<TelefonesFunc> telefones { get; set; }
 

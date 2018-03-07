@@ -12,11 +12,11 @@ namespace WebConsultas.Models
     {
         public Estado()
         {
-            cidades = new List<Cidade>();
+            Cidades = new List<Cidade>();
         }
         [Key]
         public int idEstado { get; set; }
         public string descricao { get; set; }
-        public virtual IEnumerable<Cidade> cidades { get; set; }
+        public virtual IEnumerable<Cidade> Cidades { get; set; }
     }
 }

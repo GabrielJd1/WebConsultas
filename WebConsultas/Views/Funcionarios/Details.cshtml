@@ -1,0 +1,58 @@
+﻿@model WebConsultas.Models.Funcionario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcionario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cargo.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cargo.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco.rua)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco.rua)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dataDemi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dataDemi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idFuncionario }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

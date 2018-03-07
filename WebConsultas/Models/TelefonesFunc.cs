@@ -15,8 +15,8 @@ namespace WebConsultas.Models
         public string numero { get; set; }
 
         [ForeignKey("Funcionario")]
-        public int idFuncionario { get; set; }
+        public int Funcionario_idFuncionario { get; set; }
 
-        public virtual Funcionario funcionario { get; set; }
+        public virtual Funcionario Funcionario { get; set; }
     }
 }
