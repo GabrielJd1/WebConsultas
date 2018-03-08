@@ -17,10 +17,10 @@ namespace WebConsultas.Models
         public string complemento { get; set; }
         public string obs { get; set; }
 
-        [ForeignKey("Estado_idEstado")]
+        [ForeignKey("Estado")]
         public int Estado_idEstado { get; set; }
 
-        public virtual Estado estado { get; set; }
+        public virtual Estado Estado { get; set; }
 
     }
 }

@@ -19,9 +19,9 @@ namespace WebConsultas.Models
         public string descricao { get; set; }
 
         [ForeignKey("Estado")]
-        public int idEstado { get; set; }
+        public int Estado_idEstado { get; set; }
 
-        public virtual Estado estado { get; set; }
+        public virtual Estado Estado { get; set; }
         public virtual IEnumerable<Bairro> bairros { get; set; }
 
     }

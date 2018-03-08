@@ -150,10 +150,22 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BairrosController.cs" />
+    <Compile Include="Controllers\CargosController.cs" />
+    <Compile Include="Controllers\CidadesController.cs" />
+    <Compile Include="Controllers\EnderecosController.cs" />
+    <Compile Include="Controllers\EstadosController.cs" />
+    <Compile Include="Controllers\FuncionariosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TelefonesFuncsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803071649162_InitialCreate.cs" />
+    <Compile Include="Migrations\201803071649162_InitialCreate.Designer.cs">
+      <DependentUpon>201803071649162_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bairro.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cidade.cs" />
@@ -163,6 +175,7 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\TelefonesFunc.cs" />
     <Compile Include="Models\WebConsultasContext.cs" />
+    <Compile Include="Models\WebConsultasContext.Views.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -238,15 +251,41 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\umd\popper.min.js.map" />
-    <Content Include="Scripts\umd\popper.js.map" />
-    <Content Include="Scripts\umd\popper-utils.min.js.map" />
-    <Content Include="Scripts\umd\popper-utils.js.map" />
-    <Content Include="Scripts\README.md" />
-    <Content Include="Scripts\popper.min.js.map" />
-    <Content Include="Scripts\popper.js.map" />
-    <Content Include="Scripts\popper-utils.min.js.map" />
-    <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Funcionarios\Create.cshtml" />
+    <Content Include="Views\Funcionarios\Delete.cshtml" />
+    <Content Include="Views\Funcionarios\Details.cshtml" />
+    <Content Include="Views\Funcionarios\Edit.cshtml" />
+    <Content Include="Views\Funcionarios\Index.cshtml" />
+    <Content Include="Views\Bairros\Create.cshtml" />
+    <Content Include="Views\Bairros\Delete.cshtml" />
+    <Content Include="Views\Bairros\Details.cshtml" />
+    <Content Include="Views\Bairros\Edit.cshtml" />
+    <Content Include="Views\Bairros\Index.cshtml" />
+    <Content Include="Views\Cargos\Create.cshtml" />
+    <Content Include="Views\Cargos\Delete.cshtml" />
+    <Content Include="Views\Cargos\Details.cshtml" />
+    <Content Include="Views\Cargos\Edit.cshtml" />
+    <Content Include="Views\Cargos\Index.cshtml" />
+    <Content Include="Views\Cidades\Create.cshtml" />
+    <Content Include="Views\Cidades\Delete.cshtml" />
+    <Content Include="Views\Cidades\Details.cshtml" />
+    <Content Include="Views\Cidades\Edit.cshtml" />
+    <Content Include="Views\Cidades\Index.cshtml" />
+    <Content Include="Views\Enderecos\Create.cshtml" />
+    <Content Include="Views\Enderecos\Delete.cshtml" />
+    <Content Include="Views\Enderecos\Details.cshtml" />
+    <Content Include="Views\Enderecos\Edit.cshtml" />
+    <Content Include="Views\Enderecos\Index.cshtml" />
+    <Content Include="Views\Estados\Create.cshtml" />
+    <Content Include="Views\Estados\Delete.cshtml" />
+    <Content Include="Views\Estados\Details.cshtml" />
+    <Content Include="Views\Estados\Edit.cshtml" />
+    <Content Include="Views\Estados\Index.cshtml" />
+    <Content Include="Views\TelefonesFuncs\Create.cshtml" />
+    <Content Include="Views\TelefonesFuncs\Delete.cshtml" />
+    <Content Include="Views\TelefonesFuncs\Details.cshtml" />
+    <Content Include="Views\TelefonesFuncs\Edit.cshtml" />
+    <Content Include="Views\TelefonesFuncs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -259,6 +298,11 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803071649162_InitialCreate.resx">
+      <DependentUpon>201803071649162_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

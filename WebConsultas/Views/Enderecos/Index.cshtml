@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebConsultas.Models.Endereco>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado.descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rua)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.complemento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.obs)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado.descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rua)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.complemento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.obs)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idEndereco }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idEndereco }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idEndereco })
+        </td>
+    </tr>
+}
+
+</table>

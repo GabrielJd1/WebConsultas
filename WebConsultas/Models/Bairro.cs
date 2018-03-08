@@ -14,9 +14,11 @@ namespace WebConsultas.Models
         [Key]
         public int idBairro { get; set; }
         public string descricao { get; set; }
+
         [ForeignKey("Cidade")]
-        public int idCidade { get; set; }
-        public virtual Cidade cidade { get; set; }
+        public int Cidade_idCidade { get; set; }
+
+        public virtual Cidade Cidade { get; set; }
 
 
     }
