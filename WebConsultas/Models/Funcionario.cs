@@ -19,7 +19,7 @@ namespace WebConsultas.Models
 
         public string nome { get; set; }
         public decimal salario { get; set; }
-        public DateTime? dataDemi { get; set; }
+        public DateTime dataDemi { get; set; }
 
         [ForeignKey("Cargo")]
         public int Cargo_idCargo { get; set; }
