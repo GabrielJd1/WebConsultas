@@ -157,6 +157,7 @@
     <Compile Include="Controllers\EstadosController.cs" />
     <Compile Include="Controllers\FuncionariosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PerfisController.cs" />
     <Compile Include="Controllers\TelefonesFuncsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -169,7 +170,8 @@
     <Compile Include="Models\Bairro.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cidade.cs" />
-    <Compile Include="Models\Perifl.cs" />
+    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Perfil.cs" />
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Estado.cs" />
     <Compile Include="Models\Funcionario.cs" />
@@ -299,6 +301,11 @@
     <Content Include="Views\TelefonesFuncs\Details.cshtml" />
     <Content Include="Views\TelefonesFuncs\Edit.cshtml" />
     <Content Include="Views\TelefonesFuncs\Index.cshtml" />
+    <Content Include="Views\Perfis\Create.cshtml" />
+    <Content Include="Views\Perfis\Delete.cshtml" />
+    <Content Include="Views\Perfis\Details.cshtml" />
+    <Content Include="Views\Perfis\Edit.cshtml" />
+    <Content Include="Views\Perfis\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

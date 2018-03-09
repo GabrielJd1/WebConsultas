@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace WebConsultas.Models
         //editei
         [Key]
         public int idBairro { get; set; }
+        [DisplayName("Bairro")]
         public string descricao { get; set; }
 
         [ForeignKey("Cidade")]

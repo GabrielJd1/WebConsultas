@@ -19,17 +19,21 @@ namespace WebConsultas.Models
         public int idFuncionario { get; set; }
 
         [DisplayName("Nome Funcionário")]
+        [Required(ErrorMessage = "Digite o nome do funcionário.")]
         public string nome { get; set; }
         [DisplayName("Salário")]
-        public Nullable<double> salario { get; set; }
+        [Required(ErrorMessage = "Digite o salário do funcionário.")]
+        public double salario { get; set; }
         [DisplayName("Data Demissão")]
         public DateTime? dataDemi { get; set; }
 
-        [DisplayName("Cargo")]
+      
         [ForeignKey("Cargo")]
-        public int Cargo_idCargo { get; set; }
         [DisplayName("Cargo")]
+        public int Cargo_idCargo { get; set; }
+
         [ForeignKey("Endereco")]
+        [DisplayName("Endereco")]
         public int Endereco_idEndereco { get; set; }
 
         public virtual Cargo Cargo { get; set; }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -12,9 +13,13 @@ namespace WebConsultas.Models
     {
         [Key]
         public int idEndereco { get; set; }
+        [DisplayName("Rua")]
         public string rua { get; set; }
+        [DisplayName("Número")]
         public int numero { get; set; }
+        [DisplayName("Complemento")]
         public string complemento { get; set; }
+        [DisplayName("Observações")]
         public string obs { get; set; }
 
         [ForeignKey("Estado")]

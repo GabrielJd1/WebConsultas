@@ -19,5 +19,7 @@ namespace WebConsultas.Models
         public DbSet<Cidade> cidades { get; set; }
         public DbSet<Cargo> cargos { get; set; }
         public DbSet<Bairro> bairros { get; set; }
+
+        public System.Data.Entity.DbSet<WebConsultas.Models.Perfil> Perfils { get; set; }
     }
 }
