@@ -306,6 +306,8 @@
     <Content Include="Views\Perfis\Details.cshtml" />
     <Content Include="Views\Perfis\Edit.cshtml" />
     <Content Include="Views\Perfis\Index.cshtml" />
+    <Content Include="Views\Home\Logar.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

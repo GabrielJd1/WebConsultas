@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebConsultas.Models;
 
 namespace WebConsultas.Controllers
 {
@@ -12,17 +13,27 @@ namespace WebConsultas.Controllers
         {
             return View();
         }
-
+        public ActionResult Logar()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(Usuario usuario)
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+
+            ViewBag.daniel = "oi";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contatos";
 
             return View();
         }
