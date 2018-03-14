@@ -21,5 +21,7 @@ namespace WebConsultas.Models
         public DbSet<Bairro> bairros { get; set; }
 
         public System.Data.Entity.DbSet<WebConsultas.Models.Perfil> Perfils { get; set; }
+
+        public System.Data.Entity.DbSet<WebConsultas.Models.Usuario> Usuarios { get; set; }
     }
 }

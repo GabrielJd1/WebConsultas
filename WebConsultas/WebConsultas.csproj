@@ -159,6 +159,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PerfisController.cs" />
     <Compile Include="Controllers\TelefonesFuncsController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -308,6 +309,11 @@
     <Content Include="Views\Perfis\Index.cshtml" />
     <Content Include="Views\Home\Logar.cshtml" />
     <Content Include="Views\Shared\_LoginLayout.cshtml" />
+    <Content Include="Views\Usuarios\Create.cshtml" />
+    <Content Include="Views\Usuarios\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Details.cshtml" />
+    <Content Include="Views\Usuarios\Edit.cshtml" />
+    <Content Include="Views\Usuarios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace WebConsultas.Models
 {
-    [Table("Usuário")]
+    [Table("Usuario")]
     public class Usuario
     {
         [Key]
